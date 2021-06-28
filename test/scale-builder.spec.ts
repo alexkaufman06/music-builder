@@ -55,7 +55,6 @@ describe('Scale Builder Tests', () => {
                 ]);
             });
 
-            // TODO: Improve Handling of Enharmonic Equivalents
             it('returns the C# major scale', function() {
                expect(ScaleBuilder.majorScale('C#')).toEqual([
                    'C#', 'D#', 'E#', 'F#', 'G#', 'A#', 'B#', 'C#'
