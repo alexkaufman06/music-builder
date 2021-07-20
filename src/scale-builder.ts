@@ -10,7 +10,7 @@ class IntervalBuilder {
         }
         let newNote: Note = naturalNotes[intervalPosition];
         enharmonicEquivalentTones.forEach(enharmonicArray => {
-           if (enharmonicArray.indexOf(key) !== -1 && key === enharmonicArray[enharmonicArray.indexOf(key)]) {
+           if (key === enharmonicArray[enharmonicArray.indexOf(key)]) {
                const enharmonicEquivalentPosition = enharmonicEquivalentTones.indexOf(enharmonicArray);
                let enharmonicIntervalPosition = enharmonicEquivalentPosition + intervalStepValues[interval];
                if (enharmonicIntervalPosition > enharmonicEquivalentTones.length - 1) {
