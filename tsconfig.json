@@ -3,7 +3,7 @@
         "target": "ES2020",
         "module": "es2020",
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "build/dist",
         "importHelpers": true,
         "strict": true,
         "noImplicitAny": true,

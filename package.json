@@ -1,14 +1,14 @@
 {
   "name": "music-builder",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "The Music Builder provides the notes needed for a chord or scale.",
-  "main": "index.js",
+  "main": "./build/dist/src/main.js",
   "scripts": {
     "build": "tsc",
     "test": "npm run build && npx jest --coverage"
   },
   "author": "Alex Kaufman",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "jest": "^26.6.3",
@@ -16,5 +16,20 @@
     "ts-node": "^9.1.1",
     "typescript": "^4.3.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkaufman06/music-builder.git"
+  },
+  "keywords": [
+    "music",
+    "builder",
+    "chords",
+    "scales",
+    "intervals"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexkaufman06/music-builder/issues"
+  },
+  "homepage": "https://github.com/alexkaufman06/music-builder#readme",
   "type": "module"
 }

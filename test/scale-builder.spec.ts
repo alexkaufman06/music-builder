@@ -1,4 +1,4 @@
-import { ScaleBuilder } from '../src/scale-builder';
+import { ScaleBuilder } from '../src/main';
 import { majorScales } from "../src/common/constants";
 import { Note } from "../src/common/types";
 
