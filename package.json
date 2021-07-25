@@ -1,6 +1,6 @@
 {
   "name": "music-builder",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "The Music Builder provides the notes needed for a chord or scale.",
   "main": "./build/dist/src/main.js",
   "types": "./build/dist/src/main.d.ts",
@@ -30,7 +30,10 @@
     "builder",
     "chords",
     "scales",
-    "intervals"
+    "intervals",
+    "typescript",
+    "notes",
+    "accidentals"
   ],
   "bugs": {
     "url": "https://github.com/alexkaufman06/music-builder/issues"
