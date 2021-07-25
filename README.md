@@ -13,8 +13,9 @@ npm i music-builder
 ## Usage
 
 ```typescript
-import { ScaleBuilder } from "music-builder";
+import { IntervalBuilder, ScaleBuilder } from "music-builder";
 
+IntervalBuilder.getNotes('C', ['1P', '5P']); // returns ['C', 'G']
 ScaleBuilder.majorScale('A'); // returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
 ```
 
