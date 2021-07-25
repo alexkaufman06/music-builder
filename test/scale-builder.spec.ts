@@ -1,5 +1,5 @@
 import { ScaleBuilder } from '../src/scale-builder';
-import { majorScales } from "../src/common/constants";
+import { majorScales, minorScales } from "../src/common/constants";
 import { Note } from "../src/common/types";
 
 
@@ -24,6 +24,14 @@ describe('Scale Builder Tests', () => {
         for (const scale in majorScales) {
             it(`it returns the ${scale} major scale`, function () {
                 expect(ScaleBuilder.majorScale((scale as Note))).toEqual(majorScales[scale]);
+            });
+        }
+    });
+
+    describe('Minor Scales', () => {
+        for (const scale in minorScales) {
+            it(`it returns the ${scale} minor scale`, function () {
+                expect(ScaleBuilder.minorScale((scale as Note))).toEqual(minorScales[scale]);
             });
         }
     });

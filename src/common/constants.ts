@@ -2,6 +2,7 @@ import { Interval, NaturalNotes, Note } from "./types";
 
 export const naturalNotes: NaturalNotes[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 export const majorScalePattern: Interval[] = ['1P', '2M', '3M', '4P', '5P', '6M', '7M', '8P'];
+export const minorScalePattern: Interval[] = ['1P', '2M', '3m', '4P', '5P', '6m', '7m', '8P'];
 export const enharmonicEquivalentTones: Note[][] = [
     ['C', 'B#', 'Dbb'],
     ['C#', 'Bx', 'Db'],
@@ -47,3 +48,6 @@ export const majorScales: {[key: string]: Note[]} = {
     'G': ['G', 'A', 'B', 'C', 'D', 'E', 'F#', 'G'],
     'Gb': ['Gb', 'Ab', 'Bb', 'Cb', 'Db', 'Eb', 'F', 'Gb']
 };
+export const minorScales: {[key: string]: Note[]} = {
+    'A': ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'A']
+}
