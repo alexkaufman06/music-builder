@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
-        "module": "es2020",
+        "target": "es2017",
+        "module": "commonjs",
+        "moduleResolution": "node",
         "sourceMap": true,
+        "lib": ["es2017", "DOM"],
         "outDir": "build/dist",
         "importHelpers": true,
         "strict": true,
@@ -11,8 +13,8 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true
     },
-    "include": ["src/**/*.ts", "test/**/*.ts"],
-    "exclude": ["node_modules"]
+    "include": ["src/**/*.ts", "test/**/*.ts"]
 }
