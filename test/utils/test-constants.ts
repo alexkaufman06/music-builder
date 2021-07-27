@@ -1,5 +1,13 @@
-import { Note } from "../src/common/types";
+import { Note } from "../../src/common/types";
 
+export const majorChords: {[key: string]: Note[]} = {
+    'C': ['C', 'E', 'G'],
+    'D': ['D', 'F#', 'A']
+}
+export const minorChords: {[key: string]: Note[]} = {
+    'C': ['C', 'Eb', 'G'],
+    'D': ['D', 'F', 'A']
+}
 export const majorScales: {[key: string]: Note[]} = {
     'Ab': ['Ab', 'Bb', 'C', 'Db', 'Eb', 'F', 'G', 'Ab'],
     'A': ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#', 'A'],

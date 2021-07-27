@@ -1,6 +1,8 @@
 import { Interval, NaturalNotes, Note } from "./types";
 
 export const naturalNotes: NaturalNotes[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+export const majorChordPattern: Interval[] = ['1P', '3M', '5P'];
+export const minorChordPattern: Interval[] = ['1P', '3m', '5P'];
 export const majorScalePattern: Interval[] = ['1P', '2M', '3M', '4P', '5P', '6M', '7M', '8P'];
 export const minorScalePattern: Interval[] = ['1P', '2M', '3m', '4P', '5P', '6m', '7m', '8P'];
 export const dorianScalePattern: Interval[] = ['1P', '2M', '3m', '4P', '5P', '6M', '7m', '8P'];

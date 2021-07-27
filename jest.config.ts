@@ -1,6 +1,12 @@
 export default {
     clearMocks: true,
+    collectCoverageFrom: [
+        'src/**.ts'
+    ],
     coverageDirectory: "coverage",
+    coveragePathIgnorePatterns: [
+        "src/main.ts"
+    ],
     coverageProvider: "v8",
     globals: {
         'ts-jest': {

@@ -13,12 +13,17 @@ npm i music-builder
 ## Usage
 
 ```typescript
-import { IntervalBuilder, ScaleBuilder } from "music-builder";
+import { ChordBuilder, IntervalBuilder, ScaleBuilder } from "music-builder";
 
+// Use the IntervalBuilder for generating any musical idea/pattern you like
 IntervalBuilder.getNotes('C', ['1P', '5P']); // returns ['C', 'G']
-ScaleBuilder.majorScale('A'); // returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
-ScaleBuilder.minorScale('A'); // returns ['A', 'B', 'C', 'D', 'E', 'F','G', 'A']
-ScaleBuilder.dorianScale('D'); // returns ['D', 'E', 'F', 'G', 'A', 'B', 'C', 'D']
+
+ScaleBuilder.major('A'); // returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
+ScaleBuilder.minor('A'); // returns ['A', 'B', 'C', 'D', 'E', 'F','G', 'A']
+ScaleBuilder.dorian('D'); // returns ['D', 'E', 'F', 'G', 'A', 'B', 'C', 'D']
+
+ChordBuilder.major('C'); // returns ['C', 'E', 'G']
+ChordBuilder.minor('C'); // returns ['C', 'Eb', 'G']
 ```
 
 ## Contributing
