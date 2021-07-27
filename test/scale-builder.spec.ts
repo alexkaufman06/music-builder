@@ -1,5 +1,5 @@
 import { ScaleBuilder } from '../src/scale-builder';
-import { majorScales, minorScales } from "../src/common/constants";
+import { dorianScales, majorScales, minorScales } from "./test-constants";
 import { Note } from "../src/common/types";
 
 
@@ -32,6 +32,14 @@ describe('Scale Builder Tests', () => {
         for (const scale in minorScales) {
             it(`it returns the ${scale} minor scale`, function () {
                 expect(ScaleBuilder.minorScale((scale as Note))).toEqual(minorScales[scale]);
+            });
+        }
+    });
+
+    describe('Dorian Scales', () => {
+        for (const scale in dorianScales) {
+            it(`it returns the ${scale} dorian scale`, function () {
+                expect(ScaleBuilder.dorianScale((scale as Note))).toEqual(dorianScales[scale]);
             });
         }
     });

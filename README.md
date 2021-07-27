@@ -18,6 +18,7 @@ import { IntervalBuilder, ScaleBuilder } from "music-builder";
 IntervalBuilder.getNotes('C', ['1P', '5P']); // returns ['C', 'G']
 ScaleBuilder.majorScale('A'); // returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
 ScaleBuilder.minorScale('A'); // returns ['A', 'B', 'C', 'D', 'E', 'F','G', 'A']
+ScaleBuilder.dorianScale('D'); // returns ['D', 'E', 'F', 'G', 'A', 'B', 'C', 'D']
 ```
 
 ## Contributing

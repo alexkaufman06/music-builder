@@ -3,6 +3,7 @@ import { Interval, NaturalNotes, Note } from "./types";
 export const naturalNotes: NaturalNotes[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 export const majorScalePattern: Interval[] = ['1P', '2M', '3M', '4P', '5P', '6M', '7M', '8P'];
 export const minorScalePattern: Interval[] = ['1P', '2M', '3m', '4P', '5P', '6m', '7m', '8P'];
+export const dorianScalePattern: Interval[] = ['1P', '2M', '3m', '4P', '5P', '6M', '7m', '8P'];
 export const enharmonicEquivalentTones: Note[][] = [
     ['C', 'B#', 'Dbb'],
     ['C#', 'Bx', 'Db'],
@@ -32,22 +33,3 @@ export const intervalStepValues: {[key in Interval]: number} = {
     '7M': 11,
     '8P': 12
 };
-export const majorScales: {[key: string]: Note[]} = {
-    'Ab': ['Ab', 'Bb', 'C', 'Db', 'Eb', 'F', 'G', 'Ab'],
-    'A': ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#', 'A'],
-    'A#': ['A#', 'B#', 'Cx', 'D#', 'E#', 'Fx', 'Gx', 'A#'],
-    'Bb': ['Bb', 'C', 'D', 'Eb', 'F', 'G', 'A', 'Bb'],
-    'B': ['B', 'C#', 'D#', 'E', 'F#', 'G#', 'A#', 'B'],
-    'C': ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C'],
-    'C#': ['C#', 'D#', 'E#', 'F#', 'G#', 'A#', 'B#', 'C#'],
-    'Db': ['Db', 'Eb', 'F', 'Gb', 'Ab', 'Bb', 'C', 'Db'],
-    'D': ['D', 'E', 'F#', 'G', 'A', 'B', 'C#', 'D'],
-    'Eb': ['Eb', 'F', 'G', 'Ab', 'Bb', 'C', 'D', 'Eb'],
-    'E': ['E', 'F#', 'G#', 'A', 'B', 'C#', 'D#', 'E'],
-    'F': ['F', 'G', 'A', 'Bb', 'C', 'D', 'E', 'F'],
-    'G': ['G', 'A', 'B', 'C', 'D', 'E', 'F#', 'G'],
-    'Gb': ['Gb', 'Ab', 'Bb', 'Cb', 'Db', 'Eb', 'F', 'Gb']
-};
-export const minorScales: {[key: string]: Note[]} = {
-    'A': ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'A']
-}
