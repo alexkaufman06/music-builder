@@ -3,11 +3,11 @@ export default {
     collectCoverageFrom: [
         'src/**.ts'
     ],
-    coverageDirectory: "coverage",
+    coverageDirectory: 'coverage',
     coveragePathIgnorePatterns: [
-        "src/main.ts"
+        'src/main.ts'
     ],
-    coverageProvider: "v8",
+    coverageProvider: 'v8',
     globals: {
         'ts-jest': {
             tsconfig: 'tsconfig.json'
@@ -15,13 +15,14 @@ export default {
     },
     preset: 'ts-jest',
     roots: [
-        "<rootDir>/src",
-        "<rootDir>/test"
+        '<rootDir>/src',
+        '<rootDir>/test'
     ],
 
-    "setupFilesAfterEnv": [
+    'setupFilesAfterEnv': [
         './jest.setup.js'
     ],
-    testEnvironment: "node",
-    testRegex: "\.(test|spec){1}\\.ts?$",
+    testEnvironment: 'node',
+    testRegex: '\.(test|spec){1}\\.ts?$',
+    verbose: true
 };

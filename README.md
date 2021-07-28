@@ -23,7 +23,9 @@ ScaleBuilder.minor('A'); // returns ['A', 'B', 'C', 'D', 'E', 'F','G', 'A']
 ScaleBuilder.dorian('D'); // returns ['D', 'E', 'F', 'G', 'A', 'B', 'C', 'D']
 
 ChordBuilder.major('C'); // returns ['C', 'E', 'G']
+ChordBuilder.major7('C'); // returns ['C', 'E', 'G', 'B]
 ChordBuilder.minor('C'); // returns ['C', 'Eb', 'G']
+ChordBuilder.minor7('C'); // returns ['C', 'Eb', 'G', 'Bb]
 ```
 
 ## Contributing
