@@ -2,15 +2,15 @@ import { Note } from "./types";
 
 export const enharmonicEquivalentTones: Note[][] = [
     ['C', 'B#', 'Dbb'],
-    ['C#', 'Bx', 'Db'],
-    ['D', 'Cx', 'Ebb'],
-    ['D#', 'Eb', 'Fbb'],
-    ['E', 'Dx', 'Fb'],
+    ['C#', 'B##', 'Db'],
+    ['D', 'C##', 'Ebb'],
+    ['D#', 'Eb', 'Fbb', 'C###'],
+    ['E', 'D##', 'Fb'],
     ['F', 'E#', 'Gbb'],
-    ['F#', 'Ex', 'Gb'],
-    ['G', 'Fx', 'Abb'],
-    ['G#', 'Ab'],
-    ['A', 'Gx', 'Bbb'],
-    ['A#', 'Bb', 'Cbb'],
-    ['B', 'Ax', 'Cb']
+    ['F#', 'E##', 'Gb'],
+    ['G', 'F##', 'Abb'],
+    ['G#', 'Ab', 'F###'],
+    ['A', 'G##', 'Bbb'],
+    ['A#', 'Bb', 'Cbb', 'G###'],
+    ['B', 'A##', 'Cb']
 ];
