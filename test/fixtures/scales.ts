@@ -7,6 +7,7 @@ export const majorScales: Note[][] = [
     ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#', 'A'],
     ['A#', 'B#', 'C##', 'D#', 'E#', 'F##', 'G##', 'A#'],
     ['A##', 'B##', 'C###', 'D##', 'E##', 'F###', 'G###', 'A##'],
+    // TODO: A### won't be supported due to quadruple sharps needed (should probably only allow double sharps/flats for inputs)
     ['Bbb', 'Cb', 'Db', 'Ebb', 'Fb', 'Gb', 'Ab', 'Bbb'],
     ['Bb', 'C', 'D', 'Eb', 'F', 'G', 'A', 'Bb'],
     ['B', 'C#', 'D#', 'E', 'F#', 'G#', 'A#', 'B'],
