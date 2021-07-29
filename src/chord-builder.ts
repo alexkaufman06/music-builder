@@ -1,5 +1,5 @@
+import { major7ChordPattern, majorChordPattern, minor7ChordPattern, minorChordPattern } from "./common/chords";
 import { Note } from "./common/types";
-import { major7ChordPattern, majorChordPattern, minor7ChordPattern, minorChordPattern } from "./common/constants";
 import { IntervalBuilder } from "./interval-builder";
 
 export class ChordBuilder {

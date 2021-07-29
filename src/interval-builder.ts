@@ -1,5 +1,7 @@
+import { enharmonicEquivalentTones } from "./common/enharmonics";
+import { intervalStepValues } from "./common/intervals";
+import { naturalNotes } from "./common/naturals";
 import { Interval, NaturalNotes, Note } from "./common/types";
-import { enharmonicEquivalentTones, intervalStepValues, naturalNotes } from "./common/constants";
 
 export class IntervalBuilder {
     static getNotes(key: Note, intervals: Interval[]): Note[] {

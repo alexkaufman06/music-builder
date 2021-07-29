@@ -1,5 +1,5 @@
 import { ChordBuilder } from "../src/chord-builder";
-import { major7Chords, majorChords, minor7Chords, minorChords } from "./utils/test-constants";
+import { major7Chords, majorChords, minor7Chords, minorChords } from "./fixtures/chords";
 import { Note } from "../src/common/types";
 
 describe('Chord Builder Tests', () => {

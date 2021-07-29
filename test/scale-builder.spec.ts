@@ -1,5 +1,5 @@
 import { ScaleBuilder } from '../src/scale-builder';
-import { dorianScales, majorScales, minorScales } from "./utils/test-constants";
+import { dorianScales, majorScales, minorScales } from "./fixtures/scales";
 import { Note } from "../src/common/types";
 
 
