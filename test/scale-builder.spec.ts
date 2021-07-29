@@ -21,26 +21,26 @@ describe('Scale Builder Tests', () => {
     });
 
     describe('Major Scales', () => {
-        for (const scale in majorScales) {
-            it(`it returns the ${scale} major scale`, function () {
-                expect(ScaleBuilder.major((scale as Note))).toEqual(majorScales[scale]);
+        majorScales.forEach((majorScale) => {
+            it(`it returns the ${majorScale[0]} major scale`, function () {
+                expect(ScaleBuilder.major((majorScale[0] as Note))).toEqual(majorScale);
             });
-        }
+        });
     });
 
     describe('Minor Scales', () => {
-        for (const scale in minorScales) {
-            it(`it returns the ${scale} minor scale`, function () {
-                expect(ScaleBuilder.minor((scale as Note))).toEqual(minorScales[scale]);
+        minorScales.forEach((minorScale) => {
+            it(`it returns the ${minorScale[0]} minor scale`, function () {
+                expect(ScaleBuilder.minor((minorScale[0] as Note))).toEqual(minorScale);
             });
-        }
+        });
     });
 
     describe('Dorian Scales', () => {
-        for (const scale in dorianScales) {
-            it(`it returns the ${scale} dorian scale`, function () {
-                expect(ScaleBuilder.dorian((scale as Note))).toEqual(dorianScales[scale]);
+        dorianScales.forEach((dorianScale) => {
+            it(`it returns the ${dorianScale[0]} dorian scale`, function () {
+                expect(ScaleBuilder.dorian((dorianScale[0] as Note))).toEqual(dorianScale);
             });
-        }
+        });
     });
 });
