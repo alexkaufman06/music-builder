@@ -1,6 +1,6 @@
 import { ScaleBuilder } from '../src/scale-builder';
 import { dorianScales, majorScales, minorScales } from "./fixtures/scales";
-import { Note } from "../src/common/types";
+import { Note, NoteInput } from "../src/common/types";
 
 
 describe('Scale Builder Tests', () => {
@@ -23,7 +23,7 @@ describe('Scale Builder Tests', () => {
     describe('Major Scales', () => {
         majorScales.forEach((majorScale) => {
             it(`it returns the ${majorScale[0]} major scale`, function () {
-                expect(ScaleBuilder.major((majorScale[0] as Note))).toEqual(majorScale);
+                expect(ScaleBuilder.major((majorScale[0] as NoteInput))).toEqual(majorScale);
             });
         });
     });
@@ -31,7 +31,7 @@ describe('Scale Builder Tests', () => {
     describe('Minor Scales', () => {
         minorScales.forEach((minorScale) => {
             it(`it returns the ${minorScale[0]} minor scale`, function () {
-                expect(ScaleBuilder.minor((minorScale[0] as Note))).toEqual(minorScale);
+                expect(ScaleBuilder.minor((minorScale[0] as NoteInput))).toEqual(minorScale);
             });
         });
     });
@@ -39,7 +39,7 @@ describe('Scale Builder Tests', () => {
     describe('Dorian Scales', () => {
         dorianScales.forEach((dorianScale) => {
             it(`it returns the ${dorianScale[0]} dorian scale`, function () {
-                expect(ScaleBuilder.dorian((dorianScale[0] as Note))).toEqual(dorianScale);
+                expect(ScaleBuilder.dorian((dorianScale[0] as NoteInput))).toEqual(dorianScale);
             });
         });
     });
