@@ -40,3 +40,8 @@ export const majorScales: Note[][] = [
 ];
 export const minorScales: Note[][] = convertToModes(majorScales, 6);
 export const dorianScales: Note[][] = convertToModes(majorScales, 2);
+export const phyrgianScales: Note[][] = convertToModes(majorScales, 3);
+export const lydianScales: Note[][] = convertToModes(majorScales, 4);
+export const mixolydianScales: Note[][] = convertToModes(majorScales, 5);
+export const aeolianScales: Note[][] = convertToModes(majorScales, 6);
+export const locrianScales: Note[][] = convertToModes(majorScales, 7);

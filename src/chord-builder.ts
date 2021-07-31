@@ -1,4 +1,4 @@
-import { major7ChordPattern, majorChordPattern, minor7ChordPattern, minorChordPattern } from "./common/chords";
+import { diminishedChordPattern, major7ChordPattern, majorChordPattern, minor7ChordPattern, minor7flat5ChordPattern, minorChordPattern } from "./common/chords";
 import { Note, NoteInput } from "./common/types";
 import { IntervalBuilder } from "./interval-builder";
 
@@ -17,5 +17,13 @@ export class ChordBuilder {
 
     static minor7(note: NoteInput): Note[] {
         return IntervalBuilder.getNotes(note, minor7ChordPattern);
+    }
+
+    static diminished(note: NoteInput): Note[] {
+        return IntervalBuilder.getNotes(note, diminishedChordPattern);
+    }
+
+    static minor7flat5(note: NoteInput): Note[] {
+        return IntervalBuilder.getNotes(note, minor7flat5ChordPattern);
     }
 }

@@ -1,5 +1,5 @@
 import { ChordBuilder } from "../src/chord-builder";
-import { major7Chords, majorChords, minor7Chords, minorChords } from "./fixtures/chords";
+import { diminishedChords, major7Chords, majorChords, minor7Chords, minor7flat5Chords, minorChords } from "./fixtures/chords";
 import { NoteInput } from "../src/common/types";
 
 describe('Chord Builder Tests', () => {
@@ -95,6 +95,54 @@ describe('Chord Builder Tests', () => {
         minor7Chords.forEach((minor7chord) => {
             it(`it returns the ${minor7chord[0]} minor 7 chord`, function () {
                 expect(ChordBuilder.minor7((minor7chord[0] as NoteInput))).toEqual(minor7chord);
+            });
+        });
+    });
+
+    describe('Diminished Chords', () => {
+        it('returns an array', function () {
+            expect(Array.isArray(ChordBuilder.diminished('A'))).toEqual(true);
+        });
+
+        it('returns the natural root note as the first note in the array', function () {
+            expect(ChordBuilder.diminished('A')[0]).toEqual('A');
+        });
+
+        it('returns the flatted root note as the first note in the array', function () {
+            expect(ChordBuilder.diminished('Bb')[0]).toEqual('Bb');
+        });
+
+        it('returns the sharp root note as the first note in the array', function () {
+            expect(ChordBuilder.diminished('F#')[0]).toEqual('F#');
+        });
+
+        diminishedChords.forEach((diminishedChord) => {
+            it(`it returns the ${diminishedChord[0]} diminished 7 chord`, function () {
+                expect(ChordBuilder.diminished((diminishedChord[0] as NoteInput))).toEqual(diminishedChord);
+            });
+        });
+    });
+
+    describe('Minor7Flat5 Chords', () => {
+        it('returns an array', function () {
+            expect(Array.isArray(ChordBuilder.diminished('A'))).toEqual(true);
+        });
+
+        it('returns the natural root note as the first note in the array', function () {
+            expect(ChordBuilder.diminished('A')[0]).toEqual('A');
+        });
+
+        it('returns the flatted root note as the first note in the array', function () {
+            expect(ChordBuilder.diminished('Bb')[0]).toEqual('Bb');
+        });
+
+        it('returns the sharp root note as the first note in the array', function () {
+            expect(ChordBuilder.diminished('F#')[0]).toEqual('F#');
+        });
+
+        minor7flat5Chords.forEach((minor7flat5Chord) => {
+            it(`it returns the ${minor7flat5Chord[0]} minor7flat5 chord`, function () {
+                expect(ChordBuilder.minor7flat5((minor7flat5Chord[0] as NoteInput))).toEqual(minor7flat5Chord);
             });
         });
     });
