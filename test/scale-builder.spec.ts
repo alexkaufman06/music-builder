@@ -1,6 +1,6 @@
 import { ScaleBuilder } from '../src/scale-builder';
 import { aeolianScales, dorianScales, locrianScales, lydianScales, majorScales, minorScales, mixolydianScales, phyrgianScales } from "./fixtures/scales";
-import { Note, NoteInput } from "../src/common/types";
+import { NoteInput } from "../src/common/types";
 
 
 describe('Scale Builder Tests', () => {
