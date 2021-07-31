@@ -125,19 +125,19 @@ describe('Chord Builder Tests', () => {
 
     describe('Minor7Flat5 Chords', () => {
         it('returns an array', function () {
-            expect(Array.isArray(ChordBuilder.diminished('A'))).toEqual(true);
+            expect(Array.isArray(ChordBuilder.minor7flat5('A'))).toEqual(true);
         });
 
         it('returns the natural root note as the first note in the array', function () {
-            expect(ChordBuilder.diminished('A')[0]).toEqual('A');
+            expect(ChordBuilder.minor7flat5('A')[0]).toEqual('A');
         });
 
         it('returns the flatted root note as the first note in the array', function () {
-            expect(ChordBuilder.diminished('Bb')[0]).toEqual('Bb');
+            expect(ChordBuilder.minor7flat5('Bb')[0]).toEqual('Bb');
         });
 
         it('returns the sharp root note as the first note in the array', function () {
-            expect(ChordBuilder.diminished('F#')[0]).toEqual('F#');
+            expect(ChordBuilder.minor7flat5('F#')[0]).toEqual('F#');
         });
 
         minor7flat5Chords.forEach((minor7flat5Chord) => {
