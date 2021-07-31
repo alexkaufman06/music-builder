@@ -14,20 +14,24 @@ function convertToMode(scale: readonly Note[], relativeTonic: number): Note[] {
     return mode;
 }
 
-export function convertToMode2(scales:  Note[][]): Note[][] {
+export function convertToModes(scales:  Note[][], mode: number): Note[][] {
     const modes: Note[][] = [];
     scales.forEach((scale) => {
-        modes.push(convertToMode(scale, 2));
+        modes.push(convertToMode(scale, mode));
     });
 
     return modes;
 }
 
-export function convertToMode6(scales:  Note[][]): Note[][] {
-    const modes: Note[][] = [];
+export function convertToChords(scales: Note[][], pattern: number[]): Note[][] {
+    const chords: Note[][] = [];
     scales.forEach((scale) => {
-        modes.push(convertToMode(scale, 6));
+        let chord: Note[] = [];
+        pattern.forEach((chordScaleDegree) => {
+            chord.push(scale[chordScaleDegree - 1]);
+        });
+        chords.push(chord);
     });
 
-    return modes;
+    return chords;
 }

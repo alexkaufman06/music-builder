@@ -1,6 +1,6 @@
 import { ChordBuilder } from "../src/chord-builder";
 import { major7Chords, majorChords, minor7Chords, minorChords } from "./fixtures/chords";
-import { Note, NoteInput } from "../src/common/types";
+import { NoteInput } from "../src/common/types";
 
 describe('Chord Builder Tests', () => {
     describe('Major Chords', () => {
@@ -20,11 +20,11 @@ describe('Chord Builder Tests', () => {
             expect(ChordBuilder.major('F#')[0]).toEqual('F#');
         });
 
-        for (const chord in majorChords) {
-            it(`it returns the ${chord} major chord`, function () {
-                expect(ChordBuilder.major((chord as NoteInput))).toEqual(majorChords[chord]);
+        majorChords.forEach((majorChord) => {
+            it(`it returns the ${majorChord[0]} major chord`, function () {
+                expect(ChordBuilder.major((majorChord[0] as NoteInput))).toEqual(majorChord);
             });
-        }
+        });
     });
 
     describe('Major 7 Chords', () => {
@@ -44,11 +44,11 @@ describe('Chord Builder Tests', () => {
             expect(ChordBuilder.major7('F#')[0]).toEqual('F#');
         });
 
-        for (const chord in major7Chords) {
-            it(`it returns the ${chord} major 7 chord`, function () {
-                expect(ChordBuilder.major7((chord as NoteInput))).toEqual(major7Chords[chord]);
+        major7Chords.forEach((major7Chord) => {
+            it(`it returns the ${major7Chord[0]} major 7 chord`, function () {
+                expect(ChordBuilder.major7((major7Chord[0] as NoteInput))).toEqual(major7Chord);
             });
-        }
+        });
     });
 
     describe('Minor Chords', () => {
@@ -68,11 +68,11 @@ describe('Chord Builder Tests', () => {
             expect(ChordBuilder.minor('F#')[0]).toEqual('F#');
         });
 
-        for (const chord in minorChords) {
-            it(`it returns the ${chord} minor chord`, function () {
-                expect(ChordBuilder.minor((chord as NoteInput))).toEqual(minorChords[chord]);
+        minorChords.forEach((minorChord) => {
+            it(`it returns the ${minorChord[0]} minor chord`, function () {
+                expect(ChordBuilder.minor((minorChord[0] as NoteInput))).toEqual(minorChord);
             });
-        }
+        });
     });
 
     describe('Minor 7 Chords', () => {
@@ -92,10 +92,10 @@ describe('Chord Builder Tests', () => {
             expect(ChordBuilder.minor7('F#')[0]).toEqual('F#');
         });
 
-        for (const chord in minor7Chords) {
-            it(`it returns the ${chord} minor 7 chord`, function () {
-                expect(ChordBuilder.minor7((chord as NoteInput))).toEqual(minor7Chords[chord]);
+        minor7Chords.forEach((minor7chord) => {
+            it(`it returns the ${minor7chord[0]} minor 7 chord`, function () {
+                expect(ChordBuilder.minor7((minor7chord[0] as NoteInput))).toEqual(minor7chord);
             });
-        }
+        });
     });
 });

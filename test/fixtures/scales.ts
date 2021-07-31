@@ -1,5 +1,5 @@
 import { Note } from "../../src/common/types";
-import { convertToMode2, convertToMode6 } from "../utils";
+import { convertToModes } from "../utils";
 
 export const majorScales: Note[][] = [
     ['Abb', 'Bbb', 'Cb', 'Dbb', 'Ebb', 'Fb', 'Gb', 'Abb'],
@@ -38,5 +38,5 @@ export const majorScales: Note[][] = [
     ['G#', 'A#', 'B#', 'C#', 'D#', 'E#', 'F##', 'G#'],
     ['G##', 'A##', 'B##', 'C##', 'D##', 'E##', 'F###', 'G##']
 ];
-export const minorScales: Note[][] = convertToMode6(majorScales);
-export const dorianScales: Note[][] = convertToMode2(majorScales);
+export const minorScales: Note[][] = convertToModes(majorScales, 6);
+export const dorianScales: Note[][] = convertToModes(majorScales, 2);
