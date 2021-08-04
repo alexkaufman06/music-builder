@@ -1,5 +1,5 @@
 import { ChordBuilder } from "../src/chord-builder";
-import { diminishedChords, major7Chords, majorChords, minor7Chords, minor7flat5Chords, minorChords } from "./fixtures/chords";
+import { diminishedChords, dominant7Chords, major7Chords, majorChords, minor7Chords, minor7flat5Chords, minorChords } from "./fixtures/chords";
 import { NoteInput } from "../src/common/types";
 
 describe('Chord Builder Tests', () => {
@@ -95,6 +95,30 @@ describe('Chord Builder Tests', () => {
         minor7Chords.forEach((minor7chord) => {
             it(`it returns the ${minor7chord[0]} minor 7 chord`, function () {
                 expect(ChordBuilder.minor7((minor7chord[0] as NoteInput))).toEqual(minor7chord);
+            });
+        });
+    });
+
+    describe('Dominant 7 Chords', () => {
+        it('returns an array', function () {
+            expect(Array.isArray(ChordBuilder.dominant7('A'))).toEqual(true);
+        });
+
+        it('returns the natural root note as the first note in the array', function () {
+            expect(ChordBuilder.dominant7('A')[0]).toEqual('A');
+        });
+
+        it('returns the flatted root note as the first note in the array', function () {
+            expect(ChordBuilder.dominant7('Bb')[0]).toEqual('Bb');
+        });
+
+        it('returns the sharp root note as the first note in the array', function () {
+            expect(ChordBuilder.dominant7('F#')[0]).toEqual('F#');
+        });
+
+        dominant7Chords.forEach((dominant7Chord) => {
+            it(`it returns the ${dominant7Chord[0]} dominant 7 chord`, function () {
+                expect(ChordBuilder.dominant7((dominant7Chord[0] as NoteInput))).toEqual(dominant7Chord);
             });
         });
     });
