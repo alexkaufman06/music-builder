@@ -31,6 +31,7 @@ The `music-builder` is a pet project currently but contributions and ideas for i
 
   1. Are you sure that this new feature is important enough to justify its presence in the `music-builder` core?
   2. Is it written in a simple, concise way that doesn't add bulk to the codebase?
+  3. Is it tested sufficiently?
 
 ## Code of Conduct
 
