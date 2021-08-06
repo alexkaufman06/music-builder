@@ -1,5 +1,5 @@
 import { ScaleBuilder } from '../src/scale-builder';
-import { aeolianScales, dorianScales, locrianScales, lydianScales, majorScales, minorScales, mixolydianScales, phyrgianScales } from "./fixtures/scales";
+import { aeolianScales, dorianScales, locrianScales, lydianScales, majorPentatonicScales, majorScales, minorPentatonicScales, minorScales, mixolydianScales, phyrgianScales } from "./fixtures/scales";
 import { NoteInput } from "../src/common/types";
 
 
@@ -28,10 +28,26 @@ describe('Scale Builder Tests', () => {
         });
     });
 
+    describe('Major Pentatonic Scales', () => {
+        majorPentatonicScales.forEach((majorPentatonicScale) => {
+            it(`it returns the ${majorPentatonicScale[0]} major pentatonic scale`, function () {
+                expect(ScaleBuilder.majorPentatonic((majorPentatonicScale[0] as NoteInput))).toEqual(majorPentatonicScale);
+            });
+        });
+    });
+
     describe('Minor Scales', () => {
         minorScales.forEach((minorScale) => {
             it(`it returns the ${minorScale[0]} minor scale`, function () {
                 expect(ScaleBuilder.minor((minorScale[0] as NoteInput))).toEqual(minorScale);
+            });
+        });
+    });
+
+    describe('Minor Pentatonic Scales', () => {
+        minorPentatonicScales.forEach((minorPentatonicScale) => {
+            it(`it returns the ${minorPentatonicScale[0]} minor pentatonic scale`, function () {
+                expect(ScaleBuilder.minorPentatonic((minorPentatonicScale[0] as NoteInput))).toEqual(minorPentatonicScale);
             });
         });
     });

@@ -23,6 +23,22 @@ export function convertToModes(scales:  Note[][], mode: number): Note[][] {
     return modes;
 }
 
+export function convertToMajorPentatonic(scales: readonly Note[][]): Note[][] {
+    const majorPentatonicScales: Note[][] = [];
+    scales.forEach((scale) => {
+        majorPentatonicScales.push([
+            scale[0] as Note,
+            scale[1] as Note,
+            scale[2] as Note,
+            scale[4] as Note,
+            scale[5] as Note,
+            scale[7] as Note
+        ]);
+    });
+
+    return majorPentatonicScales;
+}
+
 export function convertToChords(scales: Note[][], pattern: number[]): Note[][] {
     const chords: Note[][] = [];
     scales.forEach((scale) => {

@@ -19,10 +19,10 @@ import { ChordBuilder, IntervalBuilder, ScaleBuilder } from "music-builder";
 IntervalBuilder.getNotes('C', ['1P', '5P']); // returns ['C', 'G']
 
 ScaleBuilder.major('A'); // returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
-// Other scale methods include minor, dorian, phrygian, lydian, mixolydian, aeolian, and locrian
+// Other scale methods include minor, major/minor pentatonics, dorian, phrygian, lydian, mixolydian, aeolian, and locrian
 
 ChordBuilder.major('C'); // returns ['C', 'E', 'G']
-// Other chord methods include major7, minor, minor7, diminished, and minor7flat5
+// Other chord methods include major7, minor, minor7, dominant, diminished, and minor7flat5
 ```
 
 ## Contributing
