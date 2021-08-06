@@ -1,5 +1,5 @@
 import { Note } from "../../src/common/types";
-import { convertToModes } from "../utils";
+import { convertToMajorPentatonic, convertToModes } from "../utils";
 
 export const majorScales: Note[][] = [
     ['Abb', 'Bbb', 'Cb', 'Dbb', 'Ebb', 'Fb', 'Gb', 'Abb'],
@@ -45,3 +45,5 @@ export const lydianScales: Note[][] = convertToModes(majorScales, 4);
 export const mixolydianScales: Note[][] = convertToModes(majorScales, 5);
 export const aeolianScales: Note[][] = convertToModes(majorScales, 6);
 export const locrianScales: Note[][] = convertToModes(majorScales, 7);
+export const majorPentatonicScales: Note[][] = convertToMajorPentatonic(majorScales);
+export const minorPentatonicScales: Note[][] = convertToModes(majorPentatonicScales, 5);

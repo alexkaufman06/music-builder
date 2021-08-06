@@ -1,4 +1,4 @@
-import { dorianScalePattern, locrianScalePattern, lydianScalePattern, majorScalePattern, minorScalePattern, mixolydianScalePattern, phrygianScalePattern } from "./common/scales";
+import { dorianScalePattern, locrianScalePattern, lydianScalePattern, majorPentatonicScalePattern, majorScalePattern, minorPentatonicScalePattern, minorScalePattern, mixolydianScalePattern, phrygianScalePattern } from "./common/scales";
 import { Note, NoteInput } from "./common/types";
 import { IntervalBuilder } from "./interval-builder";
 export class ScaleBuilder {
@@ -6,8 +6,16 @@ export class ScaleBuilder {
         return IntervalBuilder.getNotes(note, majorScalePattern);
     }
 
+    static majorPentatonic(note: NoteInput): Note[] {
+        return IntervalBuilder.getNotes(note, majorPentatonicScalePattern);
+    }
+
     static minor(note: NoteInput): Note[] {
         return IntervalBuilder.getNotes(note, minorScalePattern);
+    }
+
+    static minorPentatonic(note: NoteInput): Note[] {
+        return IntervalBuilder.getNotes(note, minorPentatonicScalePattern);
     }
 
     static dorian(note: NoteInput): Note[] {
