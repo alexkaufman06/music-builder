@@ -27,12 +27,12 @@ export function convertToMajorPentatonic(scales: readonly Note[][]): Note[][] {
     const majorPentatonicScales: Note[][] = [];
     scales.forEach((scale) => {
         majorPentatonicScales.push([
-            scale[0] as Note,
-            scale[1] as Note,
-            scale[2] as Note,
-            scale[4] as Note,
-            scale[5] as Note,
-            scale[7] as Note
+            scale[0],
+            scale[1],
+            scale[2],
+            scale[4],
+            scale[5],
+            scale[7]
         ]);
     });
 
