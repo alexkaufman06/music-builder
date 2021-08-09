@@ -13,5 +13,7 @@ jobs:
           node-version: 12.8
       - name: Install dependencies
         run: npm install
+      - name: ESLint
+        run: npm run lint
       - name: Test
         run: npm run test
