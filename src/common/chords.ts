@@ -1,4 +1,4 @@
-import { Interval } from "./types";
+import { Interval } from './types';
 
 export const majorChordPattern: Interval[] = ['1P', '3M', '5P'];
 export const major7ChordPattern: Interval[] = ['1P', '3M', '5P', '7M'];

@@ -1,4 +1,4 @@
-import { Interval } from "./types";
+import { Interval } from './types';
 
 export const majorScalePattern: Interval[] = ['1P', '2M', '3M', '4P', '5P', '6M', '7M', '8P'];
 export const majorPentatonicScalePattern: Interval[] = ['1P', '2M', '3M', '5P', '6M', '8P'];

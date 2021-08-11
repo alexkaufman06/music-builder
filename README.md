@@ -13,7 +13,7 @@ npm i music-builder
 ## Usage
 
 ```typescript
-import { ChordBuilder, IntervalBuilder, ScaleBuilder } from "music-builder";
+import { ChordBuilder, IntervalBuilder, ScaleBuilder } from 'music-builder';
 
 // Use the IntervalBuilder for generating any musical idea/pattern you like
 IntervalBuilder.getNotes('C', ['1P', '5P']); // returns ['C', 'G']
@@ -29,9 +29,9 @@ ChordBuilder.major('C'); // returns ['C', 'E', 'G']
 
 The `music-builder` is a pet project currently but contributions and ideas for improvement are welcome! Feel free to report any bugs or suggestions on the project's [issues page](https://github.com/alexkaufman06/music-builder/issues). Before sending a pull request with a new feature, check if it's already been discussed on the issues page and ask yourself two questions:
 
-  1. Are you sure that this new feature is important enough to justify its presence in the `music-builder` core?
-  2. Is it written in a simple, concise way that doesn't add bulk to the codebase?
-  3. Is it tested sufficiently?
+1. Are you sure that this new feature is important enough to justify its presence in the `music-builder` core?
+2. Is it written in a simple, concise way that doesn't add bulk to the codebase?
+3. Is it tested sufficiently?
 
 ## Code of Conduct
 

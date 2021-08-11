@@ -1,15 +1,13 @@
-import {enharmonicEquivalentTones} from "./common/enharmonics";
-import {intervalStepValues} from "./common/intervals";
-import {naturalNotes} from "./common/naturals";
-import {Interval, NaturalNotes, Note, NoteInput} from "./common/types";
+import { enharmonicEquivalentTones } from './common/enharmonics';
+import { intervalStepValues } from './common/intervals';
+import { naturalNotes } from './common/naturals';
+import { Interval, NaturalNotes, Note, NoteInput } from './common/types';
 
 export class IntervalBuilder {
   static getNotes(key: NoteInput, intervals: Interval[]): Note[] {
     const notes: Note[] = [];
     intervals.forEach((interval) => {
-      notes.push(
-          this.getNoteFromInterval(key, interval),
-      );
+      notes.push(this.getNoteFromInterval(key, interval));
     });
 
     return notes;

@@ -1,9 +1,9 @@
-import { Note } from "../../src/common/types";
-import { convertToChords } from "../utils";
-import { locrianScales, majorScales, minorScales, mixolydianScales } from "./scales";
+import { Note } from '../../src/common/types';
+import { convertToChords } from '../utils';
+import { locrianScales, majorScales, minorScales, mixolydianScales } from './scales';
 
-const triad = [1,3,5];
-const sevenChord = [1,3,5,7]
+const triad = [1, 3, 5];
+const sevenChord = [1, 3, 5, 7];
 
 export const majorChords: Note[][] = convertToChords(majorScales, triad);
 export const major7Chords: Note[][] = convertToChords(majorScales, sevenChord);

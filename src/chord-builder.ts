@@ -1,7 +1,14 @@
-import {diminishedChordPattern, dominant7ChordPattern, major7ChordPattern, majorChordPattern,
-  minor7ChordPattern, minor7flat5ChordPattern, minorChordPattern} from "./common/chords";
-import {Note, NoteInput} from "./common/types";
-import {IntervalBuilder} from "./interval-builder";
+import {
+  diminishedChordPattern,
+  dominant7ChordPattern,
+  major7ChordPattern,
+  majorChordPattern,
+  minor7ChordPattern,
+  minor7flat5ChordPattern,
+  minorChordPattern,
+} from './common/chords';
+import { Note, NoteInput } from './common/types';
+import { IntervalBuilder } from './interval-builder';
 
 export class ChordBuilder {
   static major(note: NoteInput): Note[] {
