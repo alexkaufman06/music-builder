@@ -11,11 +11,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    semi: ['error', 'always'],
-    quotes: ['error', 'double'],
+    'complexity': ['error', 3],
+    'semi': ['error', 'always'],
     'max-len': ['error', { code: 120 }],
     'object-curly-spacing': ['error', 'always'],
-    quotes: ['error', 'single'],
+    'quotes': ['error', 'single'],
     'require-jsdoc': [
       2,
       {
