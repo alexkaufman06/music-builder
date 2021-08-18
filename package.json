@@ -1,6 +1,6 @@
 {
   "name": "music-builder",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "The Music Builder provides the notes needed for a chord or scale.",
   "main": "./build/dist/src/main.js",
   "types": "./build/dist/src/main.d.ts",
