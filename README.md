@@ -27,7 +27,7 @@ ChordBuilder.major('C'); // returns ['C', 'E', 'G']
 
 ## Contributing
 
-The `music-builder` is a pet project currently but contributions and ideas for improvement are welcome! Feel free to report any bugs or suggestions on the project's [issues page](https://github.com/alexkaufman06/music-builder/issues). Before sending a pull request with a new feature, check if it's already been discussed on the issues page and ask yourself two questions:
+The `music-builder` is a pet project currently but contributions and ideas for improvement are welcome! Feel free to report any bugs or suggestions on the project's [issues page](https://github.com/alexkaufman06/music-builder/issues). Before sending a pull request with a new feature, check if it's already been discussed on the issues page and ask yourself three questions:
 
 1. Are you sure that this new feature is important enough to justify its presence in the `music-builder` core?
 2. Is it written in a simple, concise way that doesn't add bulk to the codebase?
