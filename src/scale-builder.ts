@@ -28,6 +28,8 @@ export class ScaleBuilder {
     return IntervalBuilder.getNotes(note, minorPentatonicScalePattern);
   }
 
+  // TODO: Add ionian
+
   static dorian(note: NoteInput): Note[] {
     return IntervalBuilder.getNotes(note, dorianScalePattern);
   }

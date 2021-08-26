@@ -1,6 +1,6 @@
 # Music Builder
 
-The Music Builder returns musical notes provided a key and an array of intervals. This allows it to return chords, scales, or any musical idea using the 12 tones of Western music. It is highly recommended that you use TypeScript when working with this library.
+The Music Builder returns the musical notes for a chord, scale, or any array of intervals. It works in any key up to a double flat or sharp within the 12 tones of western music. It is highly recommended that you use TypeScript when working with this library.
 
 ## Installation
 
@@ -12,18 +12,71 @@ npm i music-builder
 
 ## Usage
 
+### Interval Builder
+The `IntervalBuilder` is the heart of the music builder and is utilized in both the chord and scale builders. It allows you to generate any musical idea or patter you like provided a key and array of intervals.
+
 ```typescript
-import { ChordBuilder, IntervalBuilder, ScaleBuilder } from 'music-builder';
+import { IntervalBuilder } from 'music-builder';
 
-// Use the IntervalBuilder for generating any musical idea/pattern you like
-IntervalBuilder.getNotes('C', ['1P', '5P']); // returns ['C', 'G']
-
-ScaleBuilder.major('A'); // returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
-// Other scale methods include minor, major/minor pentatonics, dorian, phrygian, lydian, mixolydian, aeolian, and locrian
-
-ChordBuilder.major('C'); // returns ['C', 'E', 'G']
-// Other chord methods include major7, minor, minor7, dominant, diminished, and minor7flat5
+IntervalBuilder.getNotes('C', ['1P', '5P']);
+// returns ['C', 'G']
 ```
+Intervals include:
+  - Perfect unison: `'1P'`
+  - Minor second: `'2m'`
+  - Major second: `'2M'`
+  - Minor third: `'3m'`
+  - Major third: `'3M'`
+  - Perfect fourth: `'4P'`
+  - Augmented fourth: `'4A'`
+  - Diminished fifth: `'5d'`
+  - Perfect fifth: `'5P'`
+  - Minor sixth: `'6m'`
+  - Major sixth: `'6M'`
+  - Minor seventh: `'7m'`
+  - Major seventh: `'7M'`
+  - Perfect octave: `'8P'`
+
+### Scale Builder
+The `ScaleBuilder` returns a scale provided a key.
+
+```typescript
+import { ScaleBuilder } from 'music-builder';
+
+ScaleBuilder.major('A');
+// returns ['A', 'B', 'C#', 'D',  'E', 'F#', 'G#', 'A']
+```
+
+Scales include:
+  - Major
+  - Minor
+  - Major Pentatonic
+  - Minor Pentatonic
+  - Dorian
+  - Phrygian
+  - Lydian
+  - Mixolydian
+  - Aeolian
+  - Locrian
+
+### Chord Builder
+The `ChordBuilder` returns a chord provided a key.
+
+```typescript
+import { ChordBuilder } from 'music-builder';
+
+ChordBuilder.major('C');
+// returns ['C', 'E', 'G']
+```
+
+Chords include:
+  - major
+  - major7
+  - minor
+  - minor7
+  - dominant
+  - diminished
+  - minor7flat5
 
 ## Contributing
 
