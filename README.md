@@ -13,7 +13,7 @@ npm i music-builder
 ## Usage
 
 ### Interval Builder
-The `IntervalBuilder` is the heart of the music builder and is utilized in both the chord and scale builders. It allows you to generate any musical idea or patter you like provided a key and array of intervals.
+The `IntervalBuilder` is the heart of the music builder and is utilized in both the chord and scale builders. It allows you to generate any musical idea or pattern you like provided a key and array of intervals.
 
 ```typescript
 import { IntervalBuilder } from 'music-builder';
